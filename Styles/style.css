@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/f8deb3c1a029ec56b15bb462c1518f07?family=Snell+Roundhand+W01+Script');
+@import url('https://db.onlinewebfonts.com/c/16efa2896f117dae2debeb23ab4715dd?family=Didot+eText+W01+Italic');
+
+:root
+{
+    --logo-text: "Poppins", Arial, sans-serif;
+    --tagline : "Snell Roundhand W01 Script";
+    --descriptions: Didot eText W01 Italic;
+    --red : rgb(212, 4, 39);
+    --pink:rgb(247, 6, 151);
+        
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pf-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Images/pexels-koolshooters-6982476.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.navbar
+{
+    width: 90%;
+    background-color: black;
+    max-width: 1300px;
+    margin: auto;
+    
+}
+ .navbar-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+} 
+.logo
+{
+    background-color: rgb(212, 4, 39);
+    color: white;
+    font-family: var(--logo-text);
+    text-align: center;
+    padding: 11px 22px;
+    margin-left: 0
+}
+.logo h1
+{
+    font-size: 25px;
+}
+.logo p{
+    font-size: 15px;
+}
+.nav-links
+{
+  list-style: none;
+ display: flex;
+ gap:40px
+}
+.nav-links a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-family: var(--logo-text);
+}
+.nav-links a:hover, .nav-links a:focus
+{
+ color: var(--red);
+}
+.login
+{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: var(--logo-text); 
+    margin-right: 50px;
+}
+.login:hover{
+    color: rgb(52, 188, 80);
+}
+
+.tagline h1{
+    text-align: center;
+    font-size: 200px;
+    font-family: var(--tagline);
+    color:var(--pink);
+    font-weight: 500;
+    transition: text-shadow 0.1s ease;
+}
+.tagline:hover h1
+{
+text-shadow:
+        0 0 5px #fff4b3,
+        0 0 10px #ffd700,
+        0 0 10px #ffb700,
+        0 0 10px #ffea70;
+}
+.tagline{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+.sheading h1
+{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight:400;
+}
+.sheading
+{
+    margin-top: 30px ;
+}
+.service-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+h3{
+    margin-top: 18px;
+    font-family: var(--logo-text);
+    color:rgb(212, 4, 39) ;
+    text-align: center;
+    font-size: 40px;
+}
+.service-container .service-gallery
+{
+    width: 50%;
+    height: 300px;
+}
+.service-gallery .item-image, .service-gallery .service-info
+{
+    height: 300px;
+    width: 50%;
+}
+.bg-std
+{
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.service-gallery
+{
+    display: flex;
+}
+.service-gallery:nth-last-of-type(4n +3)
+{
+    flex-direction: row-reverse;
+}
+.service-gallery:nth-last-of-type(4n +4) {
+
+    flex-direction: row-reverse;
+}
+.service-info
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: rgb(242, 30, 136);
+    color: white;
+}
+.service-info h4{
+    font-size: 35px;
+    /* font-family:  */
+    font-weight: 500;
+    font-family: var(--descriptions);
+}
+.service-info p{
+    text-align: center;
+    font-family: var(--logo-text);
+}
+.about-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+} 
+.about-text
+{
+        width: 37%;
+        background-color: var(--red);
+        padding: 40px;
+        color: white;
+        z-index: 2;
+        position: relative;
+        right: 35px;
+  
+    
+}
+.about-text h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    font-family: var(--logo-text);
+}
+.about-text p
+{
+    font-size: 20px;
+    color: white;
+    font-family: var(--descriptions);
+}
+.about-image img{
+           position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40%;
+            height: 800px;
+            left: 600px;
+            z-index: 1;
+}
+.gallery-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+}
+.img-container
+{
+  width: 320px;
+  height: 220px;
+  position: relative;
+}
+.contact-container
+{
+        background-color: var(--red);
+        width: 86%;
+       margin: 60px auto;
+       padding: 60px 20px;
+       
+}
+.hcon h2
+{
+    text-align: center;
+    color: white;
+    font-family: var(--descriptions);
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+.contact
+{
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+.contact-box
+{
+    background-color: white;
+    color: var(--red);
+    width: 80%;
+    text-align: center;
+    padding: 25px 15px;
+    max-width: 350px;
+    height: 190px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-box h4
+{
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: var(--logo-text);
+}
+.contact-box p{
+    font-size: 18px;
+    font-family: var(--logo-text);
+    text-wrap: wrap;
+}
+.contact-form h4
+{
+   text-align: center;
+   font-family: var(--descriptions);
+   color: var(--red);
+   font-size: 40px;
+   margin-top: 1px;
+   font-weight: 100;
+}
+.contact-form{
+    background-color: white;
+    color: var(--red);
+    padding: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:70px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form-row
+{
+    display: flex ;
+    gap: 20px;
+}
+.form-group
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label
+{
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: var(--red);
+font-family: var(--logo-text);
+}
+input, textarea{
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+input:focus, textarea:hover{
+    border-color: var(--red);
+}
+button{
+    background-color: var(--red);
+    color: white;
+    font-family: var(--logo-text);
+    padding: 8px 4px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    width: 13%;
+}
+button:hover
+{
+    background-color: rgb(2, 181, 2) ;
+}
+.button-container
+{
+    text-align: center;
+}
+.locheading h3
+{
+    text-align: center;
+    font-family: var(--descriptions);
+    color: var(--red);
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.events
+{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* min-height: 100vh; */
+
+}
+.box-group
+{
+    position: relative;
+    width: 300px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+.box-group img{
+    width: 100%;
+    height: 220px;
+    /* object-fit: cover; */
+}
+.event-info
+{
+    padding: 20px;
+}
+.event-info h4
+{
+    margin-bottom: 8px;
+    font-family: var(--descriptions);
+    color: black;
+    font-size: 25px;
+    font-weight: 100;
+}
+.event-info p
+{
+        font-family: var(--logo-text);
+        color: black;
+        font-size: 15px;
+}
+.more-info
+{
+    display: inline-block;
+    margin: 10px;
+    color: black;
+    text-decoration: underline;
+    font-family: var(--logo-text);
+    font-size: 18px;
+}
+.buytic
+{
+    background-color: rgba(164, 2, 83, 0.781);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: var(--descriptions);
+     display: inline-block;
+   /* white-space: nowrap; */
+    width: 70%;
+    font-weight: 100;
+
+}
+.overlay
+{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.95);
+    inset: 0;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay a.close 
+{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+}
+.overlay h5
+{
+    margin-bottom: 10px;
+        font-family: var(--descriptions);
+        color: white;
+        font-size: 25px;
+        font-weight: 100;
+}
+.overlay p
+{
+    margin: 10px 0;
+    font-family: var(--logo-text);
+        color: white;
+        font-size: 15px;
+
+}
+.overlay:target
+{
+    display: flex;
+}
+.contact-container .contact-box a{
+    color: var(--red);
+}
+.login-overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+} 
+.login-overlay:target
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-pop-up
+{
+    background: black;
+    padding: 30px;
+    border-radius: 15px;
+    width: 40%;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+.login-pop-up h2
+{
+    margin-bottom: 20px;
+    color: white;
+    font-family: var(--logo-text);
+}
+.login-pop-up input
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-family: var(--logo-text);
+}
+.login-pop-up button
+{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #ff2444;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    font-family: var(--logo-text);
+    font-weight: 500;
+    margin: auto;
+}
+.login-pop-up button:hover
+{
+    background-color: rgb(2, 181, 2);
+}
+.closebtn
+{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+}
+.img-container .cover
+{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 10px;
+    left: 10px;
+background-color: rgba(0, 0, 0, 0.0);
+transition: 0.3s;
+}
+.img-container:hover .cover{
+background-color: rgba(0, 0, 0, 0.3);
+}
+.img-container i{
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+.img-container:hover i
+{
+    opacity: 1;
+}
+.service-info:hover
+{
+    color: var(--pink);
+    background-color: white;
+}
